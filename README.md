@@ -68,14 +68,12 @@ If downloading the files manually, go to the repository and click "Download ZIP"
 Manually create the following folder structure if not present:
 
 ```bash
-
+For e.g., to perform classification, make folders as follows-
 classification/
 ├── BCR-ABL/
 ├── HDAC6/
 ├── PARP1/
 ├── TELOMERASE/
-
-Move the required files into the correct folders:
 
 Place model files (.joblib, .pkl etc ) inside their respective subfolders.
 
@@ -90,6 +88,33 @@ pip install -r requirements.txt
 Run the classification script as shown in the example below:
 
 python acbr_ankalan_classification.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
+
+Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
+
+
+Similarly, make virtual_screening main folder and sub-folders as follows--
+
+virtual_screening/
+├── BCR-ABL/
+├── HDAC6/
+├── PARP1/
+├── TELOMERASE/
+
+Place model files (.joblib, .pkl etc ) inside their respective subfolders.
+
+# Create and activate a virtual environment (Optional but recommended)
+python -m venv env
+source env/bin/activate   # On Linux/macOS
+env\\Scripts\\activate    # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+Run the virtual_screening script as shown in the example below:
+
+python acbr_ankalan_vs.py --target BCR-ABL --file input_smiles.csv
+
+For Virtual_Screening module, upload a CSV file with following format--- SMILES (1st column) and id (2nd column)
 
 Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
 
