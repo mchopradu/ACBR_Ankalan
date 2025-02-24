@@ -61,6 +61,7 @@ This method ensures you have all necessary files in the correct structure.
 git clone https://github.com/mchopradu/Acbr_Ankalan.git
 cd Acbr_Ankalan
 
+### **✅ Option 2: Downloading the files manually**
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
 Manually create the following folder structure if not present:
