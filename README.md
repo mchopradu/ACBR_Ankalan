@@ -14,7 +14,7 @@ For both modules, the prediction results are supplemented with key ADME properti
 
 The classification module also includes a Tanimoto Similarity component, which compares the predicted active compound to known active compounds in the training dataset.  This aids in the identification of the most closely related active compound, revealing further information about its potential bioactivity.
 
-# Dataset
+### Dataset
 
 The compound datasets for these targets were obtained from [ChEMBL v33](https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
 
@@ -28,6 +28,17 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 | HDAC6      | 4212       | 3053          | 1781                             | 1134                             |
 | PARP1      | 2426       | 2013          | 1338                             | 600                              |
 | Telomerase | 388        | 281           | 117                              | 164                              |
+
+
+
+## Best Model Details for Each Target
+
+| Cancer Target | Fingerprint   | Algorithm | Pipeline Steps                     | No. of Features | Test Accuracy                        |
+|--------------|--------------|-----------|----------------------------------|----------------|------------------------------------------|
+| BCR-ABL      | CDK          | LightGBM  | VarianceThreshold, SMOTE         | 868            | Accuracy, ROC-AUC, Precision, Recall    |
+| HDAC6        | CDK          | LightGBM  | VarianceThreshold, SMOTE, RFE    | 50             | Accuracy, ROC-AUC, F1 Score             |
+| PARP1        | PubChem      | XGBoost   | VarianceThreshold, SMOTE, RFE    | 200            | Accuracy, ROC-AUC, Precision, Recall    |
+| Telomerase   | Klekotaroth  | SVC       | VarianceThreshold, SMOTE, RFE    | 50             | Accuracy, ROC-AUC                        |
 
 
 ## Citation
