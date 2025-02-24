@@ -21,7 +21,6 @@ The classification module also includes a Tanimoto Similarity component, which c
 The compound datasets for these targets were obtained from [ChEMBL v33](https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
 
 
-
 ## Dataset used for model development
 
 | Target      | Raw Dataset | Unique Dataset | Active (pIC50 > 6.5, IC50 ≤ 300nM) | Inactive (pIC50 < 6.3, IC50 ≥ 500nM) |
@@ -64,7 +63,11 @@ cd Acbr_Ankalan
 ### **✅ Option 2: Downloading the files manually**
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
-Manually create the following folder structure if not present:
+The Acbr_Ankalan repository is organized into two primary modules:
+
+classification/ → Contains classification models and scripts.
+virtual_screening/ → Contains virtual screening models and scripts.
+Each module has separate subfolders for different targets: BCR-ABL, HDAC6, PARP1, and TELOMERASE.
 
 ```bash
 
@@ -84,8 +87,12 @@ Acbr_Ankalan/                # Main repository folder
 │── acbr_ankalan_cls.py      # Classification script
 │── README.md                # Project documentation
 
+```
 
 To run the prediction module, make folders and sub-folders like this-
+
+```bash
+
 Acbr_Ankalan/classification/
 ├── BCR-ABL/
 ├── HDAC6/
@@ -108,8 +115,11 @@ python acbr_ankalan_cls.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(
 
 Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
 
+```
 
 Similarly, to perform virtual screening, make folders and sub-folders as follows--
+
+```bash
 
 Acbr_Ankalan/virtual_screening/
 ├── BCR-ABL/
