@@ -35,10 +35,12 @@ Acbr_Ankalan/                # Main repository folder
 │   ├── HDAC6/               # Models & data for HDAC6 virtual screening
 │   ├── PARP1/               # Models & data for PARP1 virtual screening
 │   ├── TELOMERASE/          # Models & data for Telomerase virtual screening
+│── dependencies.py          # Centralized imports for all scripts
 │── requirements.txt         # Required dependencies for running the scripts
 │── acbr_ankalan_vs.py       # Virtual screening script
 │── acbr_ankalan_cls.py      # Classification script
 │── README.md                # Project documentation
+
 
 ```
 
