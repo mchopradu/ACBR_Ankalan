@@ -7,5 +7,5 @@ ACBR_Aankalan is an open-source web server designed to help with target-driven e
 
 ACBR_Aankalan has two types of modules for each target (BCR-ABL, HDAC6, PARP1 and Telomerase)-
 
-## (1) Classification- For bioactivity class (active or inactive) prediction of a single compound against any of the selected target.
-## (2) Virtual Screening- For bioactivity class (active or inactive) prediction of more than one compounds against any of the selected target.
+# (1) Classification- For bioactivity class (active or inactive) prediction of a single compound against any of the selected target.
+# (2) Virtual Screening- For bioactivity class (active or inactive) prediction of more than one compounds against any of the selected target.
