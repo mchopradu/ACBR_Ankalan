@@ -14,6 +14,18 @@ For both modules, the prediction results are supplemented with key ADME properti
 
 The classification module also includes a Tanimoto Similarity component, which compares the predicted active compound to known active compounds in the training dataset.  This aids in the identification of the most closely related active compound, revealing further information about its potential bioactivity.
 
+# Dataset
+
+## Dataset Details for Model Training and Testing
+
+| Target      | Raw Dataset | Unique Dataset | Active (pIC50 > 6.5, IC50 ≤ 300nM) | Inactive (pIC50 < 6.3, IC50 ≥ 500nM) |
+|------------|------------|---------------|----------------------------------|----------------------------------|
+| BCR-ABL    | 2225       | 1561          | 886                              | 675                              |
+| HDAC6      | 4212       | 3053          | 1781                             | 1134                             |
+| PARP1      | 2426       | 2013          | 1338                             | 600                              |
+| Telomerase | 388        | 281           | 117                              | 164                              |
+
+
 ## Citation
 
 If you find this resource helpful for your study or research, please do cite it:
