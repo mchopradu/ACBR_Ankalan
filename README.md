@@ -16,7 +16,11 @@ The classification module also includes a Tanimoto Similarity component, which c
 
 # Dataset
 
-## Dataset Details for Model Training and Testing
+The compound datasets for these targets were obtained from [ChEMBL v33] (https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
+
+
+
+## Dataset used for model development
 
 | Target      | Raw Dataset | Unique Dataset | Active (pIC50 > 6.5, IC50 ≤ 300nM) | Inactive (pIC50 < 6.3, IC50 ≥ 500nM) |
 |------------|------------|---------------|----------------------------------|----------------------------------|
