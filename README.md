@@ -43,6 +43,52 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 | Telomerase   | Klekotaroth  | SVC       | VarianceThreshold, SMOTE, RFE    | 50             | 5-CV =  84.52% and Test Accuracy = 87.27%  |
 
 
+## How to use it
+
+Since it contains two modules—Classification and Virtual Screening—predictions for each target must be made independently.
+
+## 🔹 How to Use This Repository
+
+To run the classification and virtual screening models, you can either **clone the repository using Git** (recommended) or **manually download the files** and set up the folder structure.
+
+---
+
+### **✅ Option 1: Clone the Repository Using Git (Recommended)**
+This method ensures you have all necessary files in the correct structure.
+
+```bash
+# Clone the repository
+git clone https://github.com/mchopradu/Acbr_Ankalan.git
+cd Acbr_Ankalan
+
+If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
+
+Manually create the following folder structure if not present:
+classification/
+├── BCR-ABL/
+├── HDAC6/
+├── PARP1/
+├── TELOMERASE/
+
+Move the required files into the correct folders:
+
+Place model files (.joblib, .pkl etc ) inside their respective subfolders.
+
+# Create and activate a virtual environment (Optional but recommended)
+python -m venv env
+source env/bin/activate   # On Linux/macOS
+env\\Scripts\\activate    # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+Run the classification script as shown in the example below:
+
+python acbr_ankalan_classification.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
+
+Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
+
+
 ## Citation
 
 If you find this resource helpful for your study or research, please do cite it:
