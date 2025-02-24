@@ -68,15 +68,30 @@ If downloading the files manually, go to the repository and click "Download ZIP"
 Manually create the following folder structure if not present:
 
 ```bash
-For e.g., to perform classification, make folders as follows-
-classification/
-├── BCR-ABL/
-├── HDAC6/
-├── PARP1/
-├── TELOMERASE/
 
-Place model files (.joblib, .pkl etc ) inside their respective subfolders.
+Acbr_Ankalan/
+│── classification/
+│   ├── BCR-ABL/
+│   ├── HDAC6/
+│   ├── PARP1/
+│   ├── TELOMERASE/
+│── virtual_screening/
+│   ├── BCR-ABL/
+│   ├── HDAC6/
+│   ├── PARP1/
+│   ├── TELOMERASE/
+│── requirements.txt
+│── acbr_ankalan_vs.py
+│── acbr_ankalan_cls.py
+│── README.md
 
+classification/ → Contains models and scripts for classification.
+virtual_screening/ → Contains models and scripts for virtual screening.
+BCR-ABL/, HDAC6/, PARP1/, TELOMERASE/ → Separate subfolders for each target's model files.
+requirements.txt → Lists dependencies needed to run the project.
+acbr_ankalan_vs.py → Script for virtual screening.
+acbr_ankalan_cls.py → Script for classification.
+######
 # Create and activate a virtual environment (Optional but recommended)
 python -m venv env
 source env/bin/activate   # On Linux/macOS
