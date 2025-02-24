@@ -33,12 +33,12 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 
 ## Best Model Details for Each Target
 
-| Cancer Target | Fingerprint   | Algorithm | Pipeline Steps                     | No. of Features | Test Accuracy                        |
+| Cancer Target | Fingerprint   | Algorithm | Pipeline Steps                     | No. of Features | 5-CV and Test Accuracy                        |
 |--------------|--------------|-----------|----------------------------------|----------------|------------------------------------------|
-| BCR-ABL      | CDK          | LightGBM  | VarianceThreshold, SMOTE         | 868            | Accuracy, ROC-AUC, Precision, Recall    |
-| HDAC6        | CDK          | LightGBM  | VarianceThreshold, SMOTE, RFE    | 50             | Accuracy, ROC-AUC, F1 Score             |
-| PARP1        | PubChem      | XGBoost   | VarianceThreshold, SMOTE, RFE    | 200            | Accuracy, ROC-AUC, Precision, Recall    |
-| Telomerase   | Klekotaroth  | SVC       | VarianceThreshold, SMOTE, RFE    | 50             | Accuracy, ROC-AUC                        |
+| BCR-ABL      | CDK          | LightGBM  | VarianceThreshold, SMOTE         | 868            | 5-CV =  87.78% and Test Accuracy = 89.78%  |
+| HDAC6        | CDK          | LightGBM  | VarianceThreshold, SMOTE, RFE    | 50             | 5-CV =  86.61% and Test Accuracy = 86.79%  |
+| PARP1        | PubChem      | XGBoost   | VarianceThreshold, SMOTE, RFE    | 200            | 5-CV =  90.56% and Test Accuracy = 89.95%  |
+| Telomerase   | Klekotaroth  | SVC       | VarianceThreshold, SMOTE, RFE    | 50             | 5-CV =  84.52% and Test Accuracy = 87.27%  |
 
 
 ## Citation
