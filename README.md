@@ -104,11 +104,11 @@ Acbr_Ankalan/classification/
 Place model files (.joblib, .pkl etc ) inside their respective subfolders.
 
 # Create and activate a virtual environment (Optional but recommended)
-python -m venv env
+python -m venv venv
 source env/bin/activate   # On Linux/macOS
-env\\Scripts\\activate    # On Windows
+venv\\Scripts\\activate    # On Windows
 
-# Install dependencies
+# Install required libraries
 pip install -r requirements.txt
 
 From the Acbr_Ankalan main folder, run the classification script as shown below:
