@@ -61,11 +61,14 @@ cd Acbr_Ankalan
 
 ```
 
-```bash
+
 ### **✅ Option 2: Downloading the files manually**
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
 Manually create the following folder structure if not present:
+
+```bash
+
 classification/
 ├── BCR-ABL/
 ├── HDAC6/
