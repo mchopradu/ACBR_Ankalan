@@ -61,7 +61,7 @@ cd Acbr_Ankalan
 
 ```
 
-
+```bash
 ### **✅ Option 2: Downloading the files manually**
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
@@ -89,6 +89,8 @@ Run the classification script as shown in the example below:
 python acbr_ankalan_classification.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
 
 Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
+
+```
 
 
 ## Citation
