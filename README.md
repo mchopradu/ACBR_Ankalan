@@ -109,7 +109,7 @@ env\\Scripts\\activate    # On Windows
 # Install dependencies
 pip install -r requirements.txt
 
-From the Acbr_Ankalan main folder, run the classification script as shown in the example below:
+From the Acbr_Ankalan main folder, run the classification script as shown below:
 
 python acbr_ankalan_cls.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
 
@@ -137,16 +137,19 @@ env\\Scripts\\activate    # On Windows
 # Install dependencies
 pip install -r requirements.txt
 
-From the Acbr_Ankalan main folder, run the virtual_screening script as shown in the example below:
+**For Virtual_Screening module, use a CSV file with following format--- SMILES (1st column) and id (2nd column)**
 
+From the Acbr_Ankalan main folder, run the virtual_screening script as shown below:
+
+**If the smiles file is in the same directory as the script:**
 python acbr_ankalan_vs.py --target BCR-ABL --file input_smiles.csv
 
-For Virtual_Screening module, upload a CSV file with following format--- SMILES (1st column) and id (2nd column)
+**If the smiles file is in some folder:**
+python acbr_ankalan_vs.py --target BCR-ABL --file path/to/input_smiles.csv
 
 Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
 
 ```
-
 
 ## Citation
 
