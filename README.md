@@ -13,3 +13,12 @@ ACBR_Aankalan has two types of modules for each target (BCR-ABL, HDAC6, PARP1 an
 For both modules, the prediction results are supplemented with key ADME properties, including Molecular Weight, Aromaticity, LogP, Heavy Atom Count, Hydrogen Bond Acceptors (HBA), Hydrogen Bond Donors (HBD), Total Polar Surface Area (TPSA), and Rotatable Bonds—all essential characteristics for assessing a compound's drug-likeness.
 
 The classification module also includes a Tanimoto Similarity component, which compares the predicted active compound to known active compounds in the training dataset.  This aids in the identification of the most closely related active compound, revealing further information about its potential bioactivity.
+
+## Citation
+
+If you find this resource helpful for your study or research, please do cite it:
+
+Citation coming soon
+
+## Acknowledgement
+This work was supported by the Department of Biotechnology (DBT), Govt of India.
