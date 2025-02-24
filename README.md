@@ -16,6 +16,32 @@ For both modules, the prediction results are supplemented with key ADME properti
 
 The classification module also includes a Tanimoto Similarity component, which compares the predicted active compound to known active compounds in the training dataset.  This aids in the identification of the most closely related active compound, revealing further information about its potential bioactivity.
 
+The Acbr_Ankalan repository on github is organized into two primary modules:
+
+Classification/ → Contains classification models and scripts.
+Virtual_screening/ → Contains virtual screening models and scripts.
+Each module has separate subfolders for different targets: BCR-ABL, HDAC6, PARP1, and TELOMERASE as shown below
+
+```bash
+
+Acbr_Ankalan/                # Main repository folder
+│── classification/          # Classification module
+│   ├── BCR-ABL/             # Models & data for BCR-ABL classification
+│   ├── HDAC6/               # Models & data for HDAC6 classification
+│   ├── PARP1/               # Models & data for PARP1 classification
+│   ├── TELOMERASE/          # Models & data for Telomerase classification
+│── virtual_screening/       # Virtual screening module
+│   ├── BCR-ABL/             # Models & data for BCR-ABL virtual screening
+│   ├── HDAC6/               # Models & data for HDAC6 virtual screening
+│   ├── PARP1/               # Models & data for PARP1 virtual screening
+│   ├── TELOMERASE/          # Models & data for Telomerase virtual screening
+│── requirements.txt         # Required dependencies for running the scripts
+│── acbr_ankalan_vs.py       # Virtual screening script
+│── acbr_ankalan_cls.py      # Classification script
+│── README.md                # Project documentation
+
+```
+
 ### Dataset
 
 The compound datasets for these targets were obtained from [ChEMBL v33](https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
@@ -59,35 +85,10 @@ cd Acbr_Ankalan
 
 ```
 
-
 ### **✅ Option 2: Downloading the files manually**
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
-The Acbr_Ankalan repository is organized into two primary modules:
 
-classification/ → Contains classification models and scripts.
-virtual_screening/ → Contains virtual screening models and scripts.
-Each module has separate subfolders for different targets: BCR-ABL, HDAC6, PARP1, and TELOMERASE.
-
-```bash
-
-Acbr_Ankalan/                # Main repository folder
-│── classification/           # Classification module
-│   ├── BCR-ABL/             # Models & data for BCR-ABL classification
-│   ├── HDAC6/               # Models & data for HDAC6 classification
-│   ├── PARP1/               # Models & data for PARP1 classification
-│   ├── TELOMERASE/          # Models & data for Telomerase classification
-│── virtual_screening/       # Virtual screening module
-│   ├── BCR-ABL/             # Models & data for BCR-ABL virtual screening
-│   ├── HDAC6/               # Models & data for HDAC6 virtual screening
-│   ├── PARP1/               # Models & data for PARP1 virtual screening
-│   ├── TELOMERASE/          # Models & data for Telomerase virtual screening
-│── requirements.txt         # Required dependencies for running the scripts
-│── acbr_ankalan_vs.py       # Virtual screening script
-│── acbr_ankalan_cls.py      # Classification script
-│── README.md                # Project documentation
-
-```
 
 To run the prediction module, make folders and sub-folders like this-
 
