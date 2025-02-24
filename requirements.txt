@@ -22,7 +22,6 @@ kiwisolver==1.4.5
 lightgbm==4.5.0
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
-matplotlib==3.9.1
 mdurl==0.1.2
 numpy==1.26.4
 packaging==23.2
