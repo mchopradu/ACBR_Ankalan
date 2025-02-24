@@ -16,7 +16,7 @@ The classification module also includes a Tanimoto Similarity component, which c
 
 # Dataset
 
-The compound datasets for these targets were obtained from [ChEMBL v33] (https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
+The compound datasets for these targets were obtained from [ChEMBL v33](https://www.ebi.ac.uk/chembl/), resulting in high-quality, bioactivity-annotated data for model training and validation.
 
 
 
