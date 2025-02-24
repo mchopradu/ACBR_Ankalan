@@ -69,7 +69,7 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 
 ## How to use it
 
-Since it contains two modules—Classification and Virtual Screening— predictions for each target must be made independently.
+Since it contains two modules—Classification and Virtual Screening— predictions for each target must be made independently for both modules.
 
 ## 🔹 How to Use This Repository
 
@@ -89,8 +89,7 @@ cd Acbr_Ankalan
 If downloading the files manually, go to the repository and click "Download ZIP". Extract the ZIP file on your computer.
 
 
-
-To run the prediction module, make folders and sub-folders like this-
+**To run the prediction module, make folders and sub-folders like this**-
 
 ```bash
 
@@ -118,7 +117,7 @@ Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
 
 ```
 
-Similarly, to perform virtual screening, make folders and sub-folders as follows--
+**Similarly, to perform virtual screening, make folders and sub-folders as follows-**
 
 ```bash
 
