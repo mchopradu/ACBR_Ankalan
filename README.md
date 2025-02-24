@@ -51,8 +51,6 @@ Since it contains two modules—Classification and Virtual Screening—predictio
 
 To run the classification and virtual screening models, you can either **clone the repository using Git** (recommended) or **manually download the files** and set up the folder structure.
 
----
-
 ### **✅ Option 1: Clone the Repository Using Git (Recommended)**
 This method ensures you have all necessary files in the correct structure.
 
