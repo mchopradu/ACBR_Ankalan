@@ -32,7 +32,6 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 | Telomerase | 388        | 281           | 117                              | 164                              |
 
 
-
 ## Best Model Details for Each Target
 
 | Cancer Target | Fingerprint   | Algorithm | Pipeline Steps                     | No. of Features | 5-CV and Test Accuracy                        |
@@ -45,7 +44,7 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 
 ## How to use it
 
-Since it contains two modules—Classification and Virtual Screening—predictions for each target must be made independently.
+Since it contains two modules—Classification and Virtual Screening— predictions for each target must be made independently.
 
 ## 🔹 How to Use This Repository
 
@@ -69,47 +68,25 @@ Manually create the following folder structure if not present:
 
 ```bash
 
-Acbr_Ankalan/
-│── classification/
-│   ├── BCR-ABL/
-│   ├── HDAC6/
-│   ├── PARP1/
-│   ├── TELOMERASE/
-│── virtual_screening/
-│   ├── BCR-ABL/
-│   ├── HDAC6/
-│   ├── PARP1/
-│   ├── TELOMERASE/
-│── requirements.txt
-│── acbr_ankalan_vs.py
-│── acbr_ankalan_cls.py
-│── README.md
-
-classification/ → Contains models and scripts for classification.
-virtual_screening/ → Contains models and scripts for virtual screening.
-BCR-ABL/, HDAC6/, PARP1/, TELOMERASE/ → Separate subfolders for each target's model files.
-requirements.txt → Lists dependencies needed to run the project.
-acbr_ankalan_vs.py → Script for virtual screening.
-acbr_ankalan_cls.py → Script for classification.
-######
-# Create and activate a virtual environment (Optional but recommended)
-python -m venv env
-source env/bin/activate   # On Linux/macOS
-env\\Scripts\\activate    # On Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-Run the classification script as shown in the example below:
-
-python acbr_ankalan_classification.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
-
-Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
+Acbr_Ankalan/                # Main repository folder
+│── classification/           # Classification module
+│   ├── BCR-ABL/             # Models & data for BCR-ABL classification
+│   ├── HDAC6/               # Models & data for HDAC6 classification
+│   ├── PARP1/               # Models & data for PARP1 classification
+│   ├── TELOMERASE/          # Models & data for Telomerase classification
+│── virtual_screening/       # Virtual screening module
+│   ├── BCR-ABL/             # Models & data for BCR-ABL virtual screening
+│   ├── HDAC6/               # Models & data for HDAC6 virtual screening
+│   ├── PARP1/               # Models & data for PARP1 virtual screening
+│   ├── TELOMERASE/          # Models & data for Telomerase virtual screening
+│── requirements.txt         # Required dependencies for running the scripts
+│── acbr_ankalan_vs.py       # Virtual screening script
+│── acbr_ankalan_cls.py      # Classification script
+│── README.md                # Project documentation
 
 
-Similarly, make virtual_screening main folder and sub-folders as follows--
-
-virtual_screening/
+To run the prediction module, make folders and sub-folders like this-
+Acbr_Ankalan/classification/
 ├── BCR-ABL/
 ├── HDAC6/
 ├── PARP1/
@@ -125,7 +102,32 @@ env\\Scripts\\activate    # On Windows
 # Install dependencies
 pip install -r requirements.txt
 
-Run the virtual_screening script as shown in the example below:
+From the Acbr_Ankalan main folder, run the classification script as shown in the example below:
+
+python acbr_ankalan_cls.py --target BCR-ABL --smiles "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
+
+Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
+
+
+Similarly, to perform virtual screening, make folders and sub-folders as follows--
+
+Acbr_Ankalan/virtual_screening/
+├── BCR-ABL/
+├── HDAC6/
+├── PARP1/
+├── TELOMERASE/
+
+Place model files (.joblib, .pkl etc ) inside their respective subfolders.
+
+# Create and activate a virtual environment (Optional but recommended)
+python -m venv env
+source env/bin/activate   # On Linux/macOS
+env\\Scripts\\activate    # On Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+From the Acbr_Ankalan main folder, run the virtual_screening script as shown in the example below:
 
 python acbr_ankalan_vs.py --target BCR-ABL --file input_smiles.csv
 
