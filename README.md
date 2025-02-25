@@ -71,7 +71,7 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 
 ## How to use it
 
-Since it contains two modules—Classification and Virtual Screening— predictions for each target must be made independently for both modules.
+Since it contains two modules—Classification and Virtual Screening; predictions for each target must be made independently for both modules.
 
 ## 🔹 How to Use This Repository
 
