@@ -2,7 +2,7 @@
 
 ## Advancing Drug Discovery with Machine Learning Models for BCR-ABL, HDAC6, PARP1 and Telomerase Inhibitors.
 
-This repository contains details, codes and the associated ML models of the ACBR Ankalan web-server deployed on the following link [ACBR Ankalan](https://bic.acbr.du.ac.in/ankalan) for any one to use it freely for educational andd research purpose.
+This repository contain details, codes and the associated ML models of the ACBR Ankalan web-server deployed on the following link [ACBR Ankalan](https://bic.acbr.du.ac.in/ankalan) for any one to use it freely for educational andd research purpose.
 
 ## Description 
 ACBR_Aankalan is an open-source web server designed to help with target-driven early-stage drug discovery. It uses proprietary Machine Learning classifiers to predict the bioactivity class (active or inactive) of the molecules against various cancer targets.  With its user-friendly interface , ACBR_Aankalan enables researchers to predict, conduct virtual screening, and use the tool into larger drug discovery pipelines.
