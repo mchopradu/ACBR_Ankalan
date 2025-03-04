@@ -144,10 +144,10 @@ pip install -r requirements.txt
 From the Acbr_Ankalan main folder, run the virtual_screening script as shown below:
 
 **If the smiles file is in the same directory as the script:**
-python acbr_ankalan_vs.py --target BCR-ABL --file input_smiles.csv
+python acbr_ankalan_vs.py --target BCR-ABL --file input_smiles.csv --output screening_results.csv
 
-**If the smiles file is in some folder:**
-python acbr_ankalan_vs.py --target BCR-ABL --file path/to/input_smiles.csv
+**If the smiles file is in some other folder:**
+python acbr_ankalan_vs.py --target BCR-ABL --file path/to/input_smiles.csv --output screening_results.csv
 
 Replace BCR-ABL with HDAC6, PARP1, or TELOMERASE and smiles as needed.
 
