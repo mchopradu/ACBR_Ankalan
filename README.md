@@ -4,7 +4,8 @@
 
 This repository is a part of the abovementioned research article and contain details, codes and the associated ML models of the webserver deployed on the following link [ACBR Ankalan](https://bic.acbr.du.ac.in/ankalan). It is available for any one to use it freely for educational and research purposes.
 
-DOI of the research article- Coming soon
+##DOI of the research article- 
+Coming soon
 
 ## Description 
 ACBR_Aankalan is an open-source webserver designed to help with target-driven early-stage drug discovery. It uses proprietary Machine Learning classifiers to predict the bioactivity class (active or inactive) of the molecules against various cancer targets.  With its user-friendly interface , ACBR_Aankalan enables researchers to predict, conduct virtual screening, and use the tool into larger drug discovery pipelines.
