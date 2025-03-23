@@ -4,7 +4,7 @@ Title of the research article-
 
 ### ACBR_Ankalan Webserver: A novel Machine Learning-enabled platform for advancing Drug Discovery of BCR-ABL, HDAC6, PARP1, and Telomerase Inhibitors
 
-This repository is a part of the abovementioned research article and contain details, codes and the associated ML models of the webserver deployed on the following link [ACBR Ankalan](https://bic.acbr.du.ac.in/ankalan). It is available for any one to use it freely for educational and research purposes.
+This repository is a part of the abovementioned research article and contain details, codes and the associated ML models of the webserver deployed on the following link [ACBR Ankalan](https://bic.acbr.du.ac.in/). It is available for any one to use it freely for educational and research purposes.
 
 ### DOI of the research article- 
 Coming soon
