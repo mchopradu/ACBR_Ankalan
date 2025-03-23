@@ -165,4 +165,24 @@ If you find this resource helpful for your study or research, please do cite it:
 Citation coming soon
 
 ## Acknowledgement
+
+
+
+## License  
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.  
+
+You are free to **use, modify, and distribute** this software under the terms of the GPL-3.0 license. However, any modified or derivative work **must also be released under GPL-3.0**.  
+
+### Copyright  
+Copyright (C) 2025 Prof. Madhu Chopra  
+ACBR, University of Delhi, Delhi, India  
+
+See the [LICENSE](./LICENSE) file for more details.
+
+
+
+
+
+
 This work was supported by the Department of Biotechnology (DBT), Govt of India.
