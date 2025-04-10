@@ -81,7 +81,7 @@ The compound datasets for these targets were obtained from [ChEMBL v33](https://
 
 Since it contains two modules—Classification and Virtual Screening; predictions for each target can be made independently in both the modules.
 
-## 🔹 How to Use This Repository
+## 🔹 How to Use This Repository 
 
 To run the classification and virtual screening models, you can either **clone the repository using Git** (recommended) or **manually download the files** and set up the folder structure.
 
